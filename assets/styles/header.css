@@ -1,0 +1,74 @@
+header {
+	background-color: salmon;
+	box-shadow: 0 5px 10px #565656;
+}
+
+header a {
+	color: white;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+}
+
+.header__logo {
+	font-weight: 900;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.header__link {
+	margin-left: 15px;
+}
+
+@media screen and (max-width: 767px){
+	i{
+		height: 2px;
+		width: 20px;
+		background-color: white;
+		position: absolute;
+		transition: transform .6s;
+	}
+
+	.one{
+		top: 10px;
+	}
+
+	.two{
+		top: 20px;
+	}
+
+	.three{
+		top: 30px;
+	}
+
+	.burger{
+		position: absolute;
+		top: 9px;
+		right: 4px;
+		width: 30px;
+		height: 30px;
+
+	}
+
+	.burger:hover .two{
+		display: none;
+	}
+
+	.burger:hover .one{
+		transform: rotate(45deg);
+		top: 20px;		
+	}
+
+	.burger:hover .three{
+		transform: rotate(-45deg);
+		top: 20px;
+	}
+
+	.header__nav{
+		display: none
+	}
+}
